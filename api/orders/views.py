@@ -33,10 +33,8 @@ order_status_model = order_namespace.model(
 class OrderGetCreated(Resource):
    @order_namespace.marshal_with(order_model)
    @order_namespace.doc(
-      decription = "Retrieve all orders",
-      params={
-      "order_id":"An ID for a given order"
-      }
+      decription = "Retrieve all orders"
+      
    )
    @jwt_required()
    def get(self):
