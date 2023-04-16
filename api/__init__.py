@@ -17,7 +17,7 @@ def create_app(config= config_dict['dev']):
         "Bearer Auth":{
         'type':"apiKey", 
         "in": "header",
-        "name": " authorization",
+        "name": "Authorization",
         "description" : "Add a JWT with ** Bearer &lt;JWT&gt; to authorize"
         }
     }
